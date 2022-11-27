@@ -16,8 +16,8 @@ jobs:
       with:
         repository: jcdan3/devops
         token: ${{ secrets.GITHUB_TOKEN }}
-        path: ${{ env.DEVOPS_DIR }}
+        path: ${{ env.}}
 
     - name: Hello World
-      run: python ${{ env.DEVOPS_DIR }}/main.py
+      run: python ${{ env.}}/main.py
       shell: sh
