@@ -1,10 +1,12 @@
-import time
+
 from datetime import datetime
+import mastodon
 from mastodon import Mastodon
 
+
 mastodon = Mastodon(
-        access_token = 'hMwdnStMNhPwiZ7Z4OUzhmvHLmm8J7Z_t0jCbp9Cdtw',
-        api_base_url = 'https://mastodont.cat')
+        access_token = 'YOUR TOKEN',
+        api_base_url = 'YOUR INSTANCE URL')
 
 
 def closest_qurater(h, m):
@@ -35,7 +37,7 @@ def DingDang(h,q):
             text = text + "!"
 
     if q == 4:
-        text = text + "\n🔔  "
+        text = text + "\n\n🔔  "
         for j in range(h):
             text = text + "DANG"
             if j != h-1:
